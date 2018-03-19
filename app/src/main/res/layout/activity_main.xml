@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e75cf">
+
+
+    <com.guageview.app.gudageviewnew.GaugeView
+        android:id="@+id/gauge_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:background="#0e75cf"
+        gauge:needleHeight="0.20"
+        gauge:needleWidth="0.020"
+        gauge:scaleEndValue="100"
+        gauge:scaleStartValue="0"
+        gauge:showInnerRim="false"
+        gauge:showOuterRim="false"
+        gauge:showRanges="true"
+        gauge:showScale="true" />
+
+    <ProgressBar
+        android:id="@+id/circle_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/gauge_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="75"
+        android:progressDrawable="@drawable/circle_progress_foreground"
+        android:rotation="140"
+        tools:targetApi="lollipop" />
+
+
+</RelativeLayout>
